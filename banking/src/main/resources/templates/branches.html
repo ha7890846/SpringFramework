@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bank Branches</title>
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1 th:text="${bankName}">Bank Name</h1>
+<h2>Branches in Bangalore</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Branch Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="branch : ${branches}">
+        <td th:text="${branch}">Branch</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

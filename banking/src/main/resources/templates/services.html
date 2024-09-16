@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<head>
+    <title>Bank Services</title>
+</head>
+
+<body>
+    <h1 th:text="${bankName}">Bank Name</h1>
+    <h2>Services Provided Given below</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Services</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="service : ${services}">
+                <td th:text="${service}">Service</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

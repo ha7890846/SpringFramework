@@ -52,7 +52,7 @@
     </dependencies>
 
     <build>
-        <finalName>bankingserverg</finalName>
+        <finalName>bankingserver</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
